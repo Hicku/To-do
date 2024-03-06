@@ -1,0 +1,74 @@
+body {
+  background-color: #faf9f6;
+}
+
+.App {
+  height: 100vh;
+}
+
+.nav-container {
+  margin-bottom: auto;
+  background-color: aquamarine;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  background-color: blanchedalmond;
+  width: 30%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.todo-list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.item-containter {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+.item {
+  text-align: center;
+}
+
+.todo-list-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todo-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.todo-list-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.todo-list-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
