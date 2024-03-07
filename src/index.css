@@ -1,5 +1,7 @@
 body {
   background-color: #faf9f6;
+  padding: 0px;
+  margin: 0px;
 }
 
 .App {
@@ -7,13 +9,17 @@ body {
 }
 
 .nav-container {
-  margin-bottom: auto;
-  background-color: aquamarine;
+  display: flex;
+  justify-content: end;
+  background-color: hsl(36, 100%, 90%);
 }
 
-.nav-container {
+.nav-right {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 55%;
 }
 
 .todo-list-component {
@@ -27,13 +33,14 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: auto;
-  background-color: blanchedalmond;
+  background-color: hsl(36, 100%, 90%);
   width: 30%;
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 400px;
   max-height: 400px;
   overflow-y: scroll;
+  border-radius: 20px;
 }
 
 .todo-list-items {
@@ -49,19 +56,48 @@ body {
   padding: 10px;
   width: 100px;
   border-radius: 10px;
-  background-color: blueviolet;
+  background-color: #888;
 }
 
-.item {
+.item-containter:hover {
+  cursor: pointer;
+}
+
+.add-item {
   text-align: center;
+  background-color: aquamarine;
 }
 
+.add-item form {
+  display: flex;
+  align-items: center;
+}
+
+.add-item input {
+  margin-right: 10px; /* Add spacing between input and button */
+}
+
+.stats-component {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.stats-container {
+  display: flex;
+  gap: 2em;
+}
+
+h2 {
+  color: #555;
+}
 .todo-list-container::-webkit-scrollbar {
   width: 10px;
 }
 
 .todo-list-container::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #faf9f6;
+  border-radius: 20px;
 }
 
 .todo-list-container::-webkit-scrollbar-thumb {

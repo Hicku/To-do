@@ -1,9 +1,25 @@
-import React from "react";
+export default function ToDo({ todo, onHandleComplete }) {
+  const buttonStylesComplete = {
+    backgroundColor: "#62b03e",
+  };
 
-export default function ToDo({ todo }) {
+  const buttonStylesNotComplete = {
+    backgroundColor: "#C70039",
+  };
+
   return (
-    <div className="item-containter">
-      <div className="item"> {todo}</div>
+    <div>
+      <div
+        onClick={() => onHandleComplete(todo.id)}
+        className="item-containter"
+        style={
+          todo.isComplete === true
+            ? buttonStylesComplete
+            : buttonStylesNotComplete
+        }
+      >
+        <div className="item">{todo.title}</div>
+      </div>
     </div>
   );
 }
